@@ -1,4 +1,7 @@
-# Lista = Ariel, Liliana, Etc
+# Lista = Gabi,Eze,Facu,Lauter,Lihue,Mariano,Kevin y Lean
+ 
+
+
 
 nombres= ["Gabi","Eze","Facu","Lauter","Lihue","Mariano","Kevin","Lean"]
 print(nombres)
