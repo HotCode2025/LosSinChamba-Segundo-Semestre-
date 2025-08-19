@@ -11,12 +11,14 @@ for i in range (11):
     if i % 3 == 0:
         print(i)
 
+
 # Ejercicio 2: Crear un rango de numeros de 2 a 6 a imprimelos
 # Ejemplo de ejecución: 2,3,4,5,6
 print( 'Rango con valores de inicio = 2 y fin = 6')
 rango = range(2, 7)
 for i in rango:
     print(i)
+
 
 #Ejercicio 3: Crear un rango de 3 a 10 pero con incremento de 2 en 2, en lugar de 1 en 1
 #Ejemplo de ejecución: 3,5,7,9
