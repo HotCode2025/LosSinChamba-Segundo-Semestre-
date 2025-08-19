@@ -20,7 +20,7 @@ Hemos comenzado con el repositorio, les voy a dejar los comando que utilice:\<br
  cd Prueba-Inicio-Repo
  git pull origin main
  git fetch
- git banch # Veran que esta la rama main por defecto
+ git branch #solo nombres ramas  # Veran que esta la rama main por defecto
  touch README.md # Creamos el readme
  git status
  git add .
