@@ -1,6 +1,5 @@
 # Lista = Ariel, Liliana, Etc
 
-
 nombres= ["Gabi","Eze","Facu","Lauter","Lihue","Mariano","Kevin","Lean"]
 print(nombres)
 print(nombres[0])
@@ -62,6 +61,7 @@ print(cocina[0:1])
 #Ejemplos
 Juegos = ('cs2',)#un tupla necesita de un elemnto y la coma (,) si no seria strem o cadena
 # Recordemos los elemneto de la Tupla
+
 for cocinar in cocina:# Print esta usando \n para los saltos de lineas
    print(cocinar, end= ' ') #usamos end= para eliminar los saltos de linea
 cocinaLista = list (cocina)
