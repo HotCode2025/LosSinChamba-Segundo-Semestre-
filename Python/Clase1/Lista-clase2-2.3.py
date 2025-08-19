@@ -29,3 +29,4 @@ lista3.sort()  # Ordena la lista de menor a mayor
 print(lista3)
 lista3.sort(reverse=True)  # Ordena la lista de mayor a menor
 print(lista3)
+
