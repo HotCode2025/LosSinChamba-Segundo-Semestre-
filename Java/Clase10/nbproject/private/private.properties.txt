@@ -1,0 +1,2 @@
+compile.on.save=true
+user.properties.file=C:\\Users\\gabriel\\AppData\\Roaming\\NetBeans\\26\\build.properties

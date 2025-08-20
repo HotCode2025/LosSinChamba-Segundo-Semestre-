@@ -1,0 +1,4 @@
+compile.on.save=true
+do.jlink=false
+jlink.strip=false
+user.properties.file=C:\\Users\\gabriel\\AppData\\Roaming\\NetBeans\\26\\build.properties
