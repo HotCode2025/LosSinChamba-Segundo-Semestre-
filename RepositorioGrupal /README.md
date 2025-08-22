@@ -1,0 +1,1 @@
+Creamos reposirio recordar que es grupal e individual
