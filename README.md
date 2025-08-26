@@ -14,7 +14,7 @@ Hemos comenzado con el repositorio, les voy a dejar los comando que utilice:\<br
 
 '''sh
  cd Documents
- mkdir Proyectos
+ mkdir Proyectos 
  cd Proyectos
  git clone git@github.com:ArielBetancud22/Prueba-Inicio-Repo.git
  cd Prueba-Inicio-Repo
@@ -37,4 +37,5 @@ Ingresamos al repositorio y luego solo presionamos punto<br>
  .
 ````
 Ingresamos todo este informacion y terminamos.
+
 
