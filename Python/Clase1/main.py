@@ -1,8 +1,18 @@
+<<<<<<< HEAD
+# Lista = Gabi,Eze,Facu,Lauter,Lihue,Mariano,Kevin y Lean
+# Colecciones en Python 
+=======
 # Lista = Gabi,Eze,Facu,Lauter,Lihue,Mariano,Kevin y Lean
  
+>>>>>>> 6bed64f61d6580b5c40a9b2be3f720d30ac6b436
+
+<<<<<<< HEAD
+# Las listas es que se conoce en otros lenguajes como arreglos o vectores
+
+=======
 
 
-
+>>>>>>> 6bed64f61d6580b5c40a9b2be3f720d30ac6b436
 nombres= ["Gabi","Eze","Facu","Lauter","Lihue","Mariano","Kevin","Lean"]
 print(nombres)
 print(nombres[0])
@@ -28,7 +38,13 @@ print(len(nombres)) # Le pasamos como parametro la lista
 
 #Agregamos un Elemneto
 nombres.append("Marcelo")
+nombres.append([1, 2, 3])
+nombres.append(True)
+nombres.append(10.45)
+nombres.append([4, 5])
+nombres.append([7])
 print(nombres)
+
 # Insereta Elemento en un indice especifico
 nombres.insert( 1, "Albert")
 print(nombres)
@@ -72,8 +88,6 @@ cocinaLista[0] = 'Plato'
 cocina = tuple(cocinaLista)
 print('\n' , cocina)
 #del cocina
-
-
 
 
 # CLASE 2 2.1
