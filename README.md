@@ -17,7 +17,7 @@ Hemos comenzado con el repositorio, les voy a dejar los comando que utilice:\<br
  mkdir Proyectos 
  cd Proyectos
  git clone git@github.com:ArielBetancud22/Prueba-Inicio-Repo.git
- cd Prueba-Inicio-Repo
+ cd Prueba-Inicio-Repo 
  git pull origin main
  git fetch
  git branch #solo nombres ramas  # Veran que esta la rama main por defecto
@@ -37,6 +37,7 @@ Ingresamos al repositorio y luego solo presionamos punto<br>
  .
 ````
 Ingresamos todo este informacion y terminamos.
+
 
 
 
