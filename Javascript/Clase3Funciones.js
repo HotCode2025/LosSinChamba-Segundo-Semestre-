@@ -12,3 +12,8 @@ miFuncion(5, 4)
 
 let resultado = miFuncion(6, 7)
 console.log(resultado)
+
+// Clase 3 parte 3
+let x = function(a, b) { return a+b };
+let resultado2 = x(5, 6)
+console.log(resultado2)
