@@ -38,3 +38,7 @@ miFuncion2(5, 7, 3, 6)
 var miFuncionTexto = miFuncion2.toString()
 console.log(miFuncionTexto)
 
+// Clase 3 parte 6
+
+
+
