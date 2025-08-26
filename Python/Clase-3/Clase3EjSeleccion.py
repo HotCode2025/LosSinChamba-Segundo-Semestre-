@@ -1,20 +1,20 @@
 # Lista = Ariel, Liliana, Etc
-#Colecciones en Python
+# Colecciones en Python
 
 # Las listas es lo que se conoce en otros lenjuajes como arreglos o vectores
-#arreeglos
+# arreglos
 
 nombres = ["Gabi", "Eze", "Facu", "Lauter", "Lihue", "Mariano", "Kevin", "Lean"]
 print(nombres)
 print(nombres[0])
 print(nombres[3])
 print(nombres[-1])  # va de atras hacia al principio
-print(nombres[0:8])  #solo muestra el indice 0,1,ect pero no el 8
-#Ir al inicio de la lista al indice (sin Incluirlo)
-print(nombres[:3])  #indice a mostrar 0,1,2,...
-#Desde el indice indicado hasta el final
+print(nombres[0:8])  # solo muestra el indice 0,1,ect pero no el 8
+# Ir al inicio de la lista al indice (sin Incluirlo)
+print(nombres[:3])  # indice a mostrar 0,1,2,...
+# Desde el indice indicado hasta el final
 print(nombres[1:])
-#Modificamos un valor
+# Modificamos un valor
 nombres[3] = "Facu"
 nombres[4] = "Lauter"
 print(nombres)
