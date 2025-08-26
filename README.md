@@ -29,7 +29,7 @@ Hemos comenzado con el repositorio, les voy a dejar los comando que utilice:\<br
  git push origin main
 '''
 ## Agregagos este trabajo en el readme online 
-
+  
 > ¿Cómo hacemos esto?
 Ingresamos al repositorio y luego solo presionamos punto<br>
 
@@ -39,6 +39,7 @@ Ingresamos al repositorio y luego solo presionamos punto<br>
 Ingresamos todo este informacion y terminamos.
 
  
+
 
 
 
