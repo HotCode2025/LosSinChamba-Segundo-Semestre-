@@ -22,7 +22,7 @@ Hemos comenzado con el repositorio, les voy a dejar los comando que utilice:\<br
  git fetch
  git branch #solo nombres ramas  # Veran que esta la rama main por defecto
  touch README.md # Creamos el readme
- git status
+ git status 
  git add .
  git commit -m"Creamos el readme.md"
  git status
@@ -37,6 +37,7 @@ Ingresamos al repositorio y luego solo presionamos punto<br>
  .
 ````
 Ingresamos todo este informacion y terminamos.
+
 
 
 
