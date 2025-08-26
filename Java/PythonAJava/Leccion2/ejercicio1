@@ -1,0 +1,30 @@
+import java.util.Scanner; // Importamos la clase Scanner para leer la entrada del usuario.
+
+public class ExpresionAlgoritmica {
+
+    public static void main(String[] args) {
+
+        // Creamos un objeto Scanner para leer la entrada desde el teclado.
+        Scanner scanner = new Scanner(System.in);
+
+        // Pedimos al usuario los tres valores (a, b, c).
+        System.out.print("Digite el valor de a: ");
+        double a = scanner.nextDouble();
+
+        System.out.print("Digite el valor de b: ");
+        double b = scanner.nextDouble();
+
+        System.out.print("Digite el valor de c: ");
+        double c = scanner.nextDouble();
+
+        // Calculamos el resultado. En Java, la potencia se usa con Math.pow().
+        // El tipo de dato 'double' es el equivalente a 'float' en Python para números con decimales.
+        double resultado = (Math.pow(a, 3) * (Math.pow(b, 2) - 2 * a * c)) / (2 * b);
+
+        // Imprimimos el resultado.
+        System.out.println("El resultado es: " + resultado);
+
+        // Cerramos el objeto Scanner para liberar recursos.
+        scanner.close();
+    }
+}

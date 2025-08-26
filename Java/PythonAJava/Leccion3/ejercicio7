@@ -1,0 +1,76 @@
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class CalculadoraSalarios {
+
+    public static void main(String[] args) {
+
+        // 1. Definimos el número de empleados y la suma total de salarios.
+        // Usamos 'double' para los salarios para poder manejar decimales.
+        int numEmpleados = 5;
+        double sumaTotalSalarios = 0.0;
+        
+        // Creamos un objeto Scanner para leer la entrada del usuario.
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("--- Cálculo de salarios para " + numEmpleados + " empleados ---");
+
+        // 2. Iniciamos el bucle principal que se repite para cada empleado.
+        for (int i = 1; i <= numEmpleados; i++) {
+            System.out.println("\n--- Datos del Empleado #" + i + " ---");
+
+            // Variables para las horas y la tarifa.
+            double horasTrabajadas;
+            double tarifaPorHora;
+
+            // Bucle para obtener un número válido de horas trabajadas.
+            while (true) {
+                try {
+                    System.out.print("  Digite las horas trabajadas: ");
+                    horasTrabajadas = scanner.nextDouble();
+                    
+                    if (horasTrabajadas >= 0) {
+                        break;
+                    } else {
+                        System.out.println("  Error: Las horas no pueden ser un valor negativo.");
+                    }
+                } catch (InputMismatchException e) {
+                    System.out.println("  Error: Ingrese un número válido para las horas.");
+                    scanner.nextLine(); // Limpiamos el buffer del scanner.
+                }
+            }
+
+            // Bucle para obtener una tarifa por hora válida.
+            while (true) {
+                try {
+                    System.out.print("  Digite la tarifa por hora: $");
+                    tarifaPorHora = scanner.nextDouble();
+                    
+                    if (tarifaPorHora >= 0) {
+                        break;
+                    } else {
+                        System.out.println("  Error: La tarifa no puede ser un valor negativo.");
+                    }
+                } catch (InputMismatchException e) {
+                    System.out.println("  Error: Ingrese un número válido para la tarifa.");
+                    scanner.nextLine(); // Limpiamos el buffer del scanner.
+                }
+            }
+            
+            // 3. Calculamos el salario del empleado actual.
+            double salarioActual = horasTrabajadas * tarifaPorHora;
+            System.out.printf("  => El salario de este empleado es: $%.2f\n", salarioActual);
+            
+            // 4. Acumulamos el salario en la suma total.
+            sumaTotalSalarios += salarioActual;
+        }
+        
+        // 5. Imprimimos el resultado final.
+        System.out.println("\n" + "=".repeat(50));
+        System.out.printf("La suma total de los salarios de todos los empleados es: $%.2f\n", sumaTotalSalarios);
+        System.out.println("=".repeat(50));
+
+        // Cerramos el objeto Scanner para liberar recursos.
+        scanner.close();
+    }
+}

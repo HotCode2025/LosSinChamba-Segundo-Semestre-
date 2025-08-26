@@ -1,0 +1,56 @@
+import java.util.Scanner;
+
+public class AnioBisiesto {
+
+    public static void main(String[] args) {
+        
+        // Creamos un objeto Scanner para leer la entrada del usuario.
+        Scanner scanner = new Scanner(System.in);
+        
+        // Bucle principal que se ejecuta indefinidamente hasta que el usuario decida salir.
+        while (true) {
+            try {
+                // Pedimos al usuario que ingrese el año.
+                System.out.print("Ingrese un año para verificar: ");
+                
+                // Convertimos la entrada a un número entero.
+                int anio = scanner.nextInt();
+                
+                // Limpiamos el búfer del scanner para evitar problemas en la siguiente lectura.
+                scanner.nextLine();
+                
+                // Esta es la condición clave para saber si un año es bisiesto.
+                // Usamos los operadores lógicos '&&' (and) y '||' (or).
+                if ((anio % 4 == 0 && anio % 100 != 0) || (anio % 400 == 0)) {
+                    System.out.printf("El año %d ES bisiesto.\n", anio);
+                } else {
+                    System.out.printf("El año %d NO es bisiesto.\n", anio);
+                }
+
+            } catch (java.util.InputMismatchException e) {
+                // Si el usuario no ingresa un número, se muestra un error.
+                System.out.println("Error: Por favor, ingrese un número de año válido.");
+                // Limpiamos la entrada para que el bucle no se quede atascado.
+                scanner.nextLine(); 
+            }
+            
+            // Un separador para mayor claridad.
+            System.out.println("------------------------------"); 
+            
+            // Preguntamos al usuario si desea continuar.
+            System.out.print("¿Desea verificar otro año? (Digite 's' para sí / cualquier otra tecla para salir): ");
+            String opcion = scanner.nextLine();
+            
+            // Si la respuesta no es 's' (sin importar si es mayúscula o minúscula), se rompe el bucle.
+            if (!opcion.equalsIgnoreCase("s")) {
+                break;
+            }
+        }
+        
+        // Mensaje de despedida al finalizar el proceso.
+        System.out.println("\nPrograma finalizado. ¡Hasta luego!");
+        
+        // Cerramos el objeto Scanner al salir.
+        scanner.close();
+    }
+}

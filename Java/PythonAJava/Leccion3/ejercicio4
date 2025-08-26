@@ -1,0 +1,70 @@
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class CalculadoraPromedio {
+
+    public static void main(String[] args) {
+
+        // 1. Definimos e inicializamos las variables.
+        // En Java, las variables deben ser declaradas con su tipo.
+        // Usamos 'double' para las calificaciones para permitir decimales.
+        double suma = 0.0;
+        // Se inicializa la calificacion_baja con el valor máximo posible.
+        // Esto asegura que la primera calificación ingresada siempre será la más baja.
+        double calificacionBaja = Double.MAX_VALUE;
+        int totalAlumnos = 10;
+
+        // Creamos un objeto Scanner para leer la entrada del usuario.
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("A continuación, ingrese las calificaciones de los " + totalAlumnos + " alumnos.");
+        System.out.println("--------------------------------------------------");
+
+        // 2. Iniciamos el bucle 'for' para repetir el proceso 10 veces.
+        for (int i = 1; i <= totalAlumnos; i++) {
+
+            // Bucle interno para validar que el usuario ingrese una calificación válida.
+            while (true) {
+                try {
+                    // 3. Pedimos que se digite una calificación.
+                    System.out.print("Ingrese la calificación del alumno " + i + ": ");
+                    double calificacion = scanner.nextDouble();
+
+                    // Validamos que la nota esté en un rango lógico (0 a 10).
+                    if (calificacion >= 0 && calificacion <= 10) {
+                        // 4. Sumamos la calificación al total.
+                        suma += calificacion;
+
+                        // 5. Comprobamos si la calificación actual es la más baja.
+                        if (calificacion < calificacionBaja) {
+                            calificacionBaja = calificacion;
+                        }
+
+                        // Si la nota es válida y se ha procesado, salimos del bucle de validación.
+                        break;
+                    } else {
+                        System.out.println("Error: La calificación debe estar entre 0 y 10. Intente de nuevo.");
+                    }
+                } catch (InputMismatchException e) {
+                    System.out.println("Error: Entrada no válida. Por favor, ingrese un número.");
+                    // Limpiamos la entrada para que el bucle no se quede atascado.
+                    scanner.nextLine();
+                }
+            }
+        }
+
+        // --- Cálculos Finales ---
+        // 6. Calculamos el promedio una vez terminado el bucle.
+        double calificacionPromedio = suma / totalAlumnos;
+
+        // 7. Imprimimos los resultados.
+        System.out.println("--------------------------------------------------");
+        System.out.println("\n--- Resultados Finales del Grupo ---");
+        // Usamos un formato de salida para mostrar el promedio con solo 2 decimales.
+        System.out.printf("La calificación promedio es: %.2f\n", calificacionPromedio);
+        System.out.println("La calificación más baja es: " + calificacionBaja);
+
+        // Cerramos el objeto Scanner al finalizar.
+        scanner.close();
+    }
+}
