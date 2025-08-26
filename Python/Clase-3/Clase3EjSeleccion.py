@@ -188,18 +188,18 @@ print(lista3)
 lista = [1, 2, 3] * 2  # Multiplica la lista por 2
 print(lista)
 
-# "Metodo de ordenamiento de una lista, en python es una función"
-# que se llama sort, y se puede ordenar de menor a mayor o de mayor a menor
+# Metodo de ordenamiento de una lista, en python es una función
+# que se llama sort y se puede ordenar de menor a mayor o de mayor a menor
 lista3.sort()  # Ordena la lista de menor a mayor
 print(lista3)
-lista3.sort(reverse=True)  # Ordena la lista de mayor a menor
+lista3.sort(reverse=True) # Ordena la lista de mayor a menor
 print(lista3)
 # Clase N3
 # Repaso de tuplas
 tupla = (4, "Hola", 6.78, [1, 2, 78], 4, "Hola")  # Pude tener diferentes tipos de datos dentro
 print(tupla)
 
-print(4 in tupla)  #Accion booleano, su respuestas es de tipo booleano
+print(4 in tupla)  # Accion booleano, su respuestas es de tipo booleano
 # lo que podemos usar dentro de tupla son: in, not in, index, count
 # en tupla se puede convertir de tupla a lista y de lista a tupla
 # Repaso de set o conjunto
@@ -214,7 +214,7 @@ print(conjunto1)
 print(3 not in conjunto1) # Preguntamos si el número 3 NO esta en el conjunto1
 
 # Como hacer la igualdad de dos conjuntos
-print(conjunto1 == conjunto2) #Nos devuelve como respuestas un booleano
+print(conjunto1 == conjunto2) # Nos devuelve como respuestas un booleano
 
 # Operaciones en conjuntos
 conjunto3 = conjunto1 | conjunto2 # La línea une los dos conjuntos
