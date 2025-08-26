@@ -2,7 +2,7 @@
 #Colecciones en Python
 
 # Las listas es lo que se conoce en otros lenjuajes como arreglos o vectores
-
+#arreeglos
 
 nombres = ["Gabi", "Eze", "Facu", "Lauter", "Lihue", "Mariano", "Kevin", "Lean"]
 print(nombres)
