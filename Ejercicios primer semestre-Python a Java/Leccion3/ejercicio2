@@ -1,0 +1,63 @@
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class SumaDeNumeros {
+
+    public static void main(String[] args) {
+
+        // Creamos un objeto Scanner para leer la entrada del usuario.
+        Scanner scanner = new Scanner(System.in);
+
+        // --- Opción 1: Usando la fórmula de Gauss ---
+        System.out.println("--- Calcular la suma de los primeros N números (con fórmula de Gauss) ---");
+        try {
+            System.out.print("Digite la cantidad de números a sumar (N): ");
+            int n = scanner.nextInt();
+
+            if (n < 0) {
+                System.out.println("Error: Por favor, ingrese un número entero positivo.");
+            } else {
+                // Aplicamos la fórmula de Gauss directamente.
+                // En Java, la división entera (// en Python) se obtiene con '/'.
+                int sumaTotal = n * (n + 1) / 2;
+                System.out.printf("Usando la fórmula matemática, la suma de los primeros %d números es: %d\n", n, sumaTotal);
+            }
+        } catch (InputMismatchException e) {
+            System.out.println("Error: La entrada no es un número válido.");
+            scanner.nextLine(); // Limpiamos el buffer del scanner.
+        }
+
+        System.out.println("\n-----------------------------------------------------\n");
+        
+        // --- Opción 2: Usando un bucle (for) ---
+        System.out.println("--- Calcular la suma de los primeros N números (con un bucle) ---");
+        try {
+            System.out.print("Digite la cantidad de números a sumar (N): ");
+            int n = scanner.nextInt();
+
+            if (n < 0) {
+                System.out.println("Error: Por favor, ingrese un número entero positivo.");
+            } else {
+                // Inicializamos la variable para la suma.
+                int sumaTotal = 0;
+
+                // Creamos un bucle for que va desde 1 hasta n (inclusive).
+                for (int i = 1; i <= n; i++) {
+                    // Acumulamos la suma en cada iteración.
+                    sumaTotal += i;
+                }
+
+                System.out.printf("La suma de los primeros %d números es: %d\n", n, sumaTotal);
+            }
+
+        } catch (InputMismatchException e) {
+            System.out.println("Error: La entrada no es un número válido.");
+            // No es necesario llamar a scanner.nextLine() si se maneja la excepción aquí,
+            // pero se incluye por buena práctica para la siguiente posible lectura.
+            scanner.nextLine();
+        } finally {
+            // Cerramos el objeto Scanner al finalizar.
+            scanner.close();
+        }
+    }
+}

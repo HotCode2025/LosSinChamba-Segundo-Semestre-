@@ -1,0 +1,64 @@
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class ContadorNumeros {
+
+    public static void main(String[] args) {
+
+        // 1. Definimos e inicializamos los contadores.
+        // En Java, las variables deben ser declaradas con su tipo.
+        int conteoPositivos = 0;
+        int conteoNegativos = 0;
+        int conteoNeutros = 0;
+
+        // Creamos un objeto Scanner para leer la entrada del usuario.
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("A continuación, ingrese 10 números enteros.");
+        System.out.println("------------------------------");
+
+        // 2. Creamos un bucle 'for' para repetir el proceso 10 veces.
+        // El bucle va de 1 a 10 (inclusive).
+        for (int i = 1; i <= 10; i++) {
+
+            // Usamos un bucle 'while' para la validación de la entrada.
+            while (true) {
+                try {
+                    // 3. Pedimos al usuario que digite un número.
+                    System.out.printf("Ingrese el número %d de 10: ", i);
+                    int num = scanner.nextInt();
+                    
+                    // Limpiamos el búfer del scanner después de leer el número.
+                    scanner.nextLine();
+
+                    // 4. Clasificamos el número usando una estructura if/else if/else.
+                    if (num > 0) {
+                        conteoPositivos++;
+                    } else if (num < 0) {
+                        conteoNegativos++;
+                    } else {
+                        conteoNeutros++;
+                    }
+                    
+                    // Si la entrada fue válida, salimos del bucle interno.
+                    break;
+                } catch (InputMismatchException e) {
+                    // Si la entrada no es un número, se muestra un error.
+                    System.out.println("Error: Entrada no válida. Por favor, ingrese un número entero.");
+                    // Limpiamos la entrada para que el bucle no se quede atascado.
+                    scanner.nextLine();
+                }
+            }
+        }
+
+        // 5. Al terminar el bucle, imprimimos los resultados.
+        System.out.println("------------------------------");
+        System.out.println("\n--- Resultados del Conteo ---");
+        System.out.println("Cantidad de números positivos: " + conteoPositivos);
+        System.out.println("Cantidad de números negativos: " + conteoNegativos);
+        System.out.println("Cantidad de números neutros (cero): " + conteoNeutros);
+
+        // Cerramos el objeto Scanner para liberar recursos.
+        scanner.close();
+    }
+}

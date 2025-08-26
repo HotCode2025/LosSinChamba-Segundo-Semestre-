@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class SistemaDeCalificaciones {
+
+    public static void main(String[] args) {
+
+        // Creamos un objeto Scanner para leer la entrada del usuario
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicitamos al usuario que ingrese una calificación
+        System.out.print("Digite una calificación entre 0 y 10: ");
+        int calificacion = scanner.nextInt();
+
+        // Utilizamos una estructura if-else if-else para asignar la letra
+        // de la calificación según el rango.
+        // En Java, el operador 'and' de Python es '&&'
+        if (calificacion >= 9 && calificacion <= 10) {
+            System.out.println("A");
+        } else if (calificacion >= 8 && calificacion < 9) {
+            System.out.println("B");
+        } else if (calificacion >= 7 && calificacion < 8) {
+            System.out.println("C");
+        } else if (calificacion >= 6 && calificacion < 7) {
+            System.out.println("D");
+        } else if (calificacion >= 0 && calificacion < 6) {
+            System.out.println("F");
+        } else {
+            // Manejamos cualquier valor fuera del rango 0-10
+            System.out.println("Valor incorrecto...");
+        }
+
+        // Cerramos el objeto Scanner
+        scanner.close();
+    }
+}

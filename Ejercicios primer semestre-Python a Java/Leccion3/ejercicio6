@@ -1,0 +1,91 @@
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class ClasificadorNumeros {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        int nElementos;
+
+        // 1. Pedimos la cantidad de números a ingresar y validamos la entrada.
+        while (true) {
+            try {
+                System.out.print("Digite la cantidad de elementos a ingresar: ");
+                nElementos = scanner.nextInt();
+                
+                if (nElementos > 0) {
+                    break;
+                } else {
+                    System.out.println("Error: Debe ingresar al menos 1 elemento.");
+                }
+            } catch (InputMismatchException e) {
+                System.out.println("Error: Por favor, ingrese un número entero válido.");
+                scanner.nextLine(); // Limpiamos el buffer del scanner.
+            }
+        }
+
+        // 2. Inicializamos todas las variables en cero.
+        int sumaPares = 0;
+        int conteoPares = 0;
+        int sumaImpares = 0;
+        int conteoImpares = 0;
+        
+        System.out.println("----------------------------------------");
+        System.out.printf("Ahora, ingrese los %d números:\n", nElementos);
+
+        // 3. Iniciamos el bucle principal que se repite 'nElementos' veces.
+        for (int i = 1; i <= nElementos; i++) {
+            
+            // Bucle para validar que cada número ingresado sea un entero.
+            while (true) {
+                try {
+                    System.out.printf("  Número %d: ", i);
+                    int num = scanner.nextInt();
+
+                    // 4. Clasificamos el número y actualizamos contadores/sumas.
+                    // El operador módulo (%) en Java funciona igual que en Python.
+                    if (num % 2 == 0) {
+                        // Rama para números pares.
+                        sumaPares += num;
+                        conteoPares++;
+                    } else {
+                        // Rama para números impares.
+                        sumaImpares += num;
+                        conteoImpares++;
+                    }
+                    
+                    // Si la entrada fue válida, salimos del bucle interno.
+                    break;
+                } catch (InputMismatchException e) {
+                    System.out.println("  Entrada no válida. Intente de nuevo.");
+                    scanner.nextLine(); // Limpiamos el buffer del scanner.
+                }
+            }
+        }
+
+        // --- Resultados Finales ---
+        System.out.println("----------------------------------------");
+        System.out.println("\nAnálisis completado:");
+
+        // 5. Mostramos los resultados de los números pares.
+        if (conteoPares == 0) {
+            System.out.println("No se han digitado números pares.");
+        } else {
+            System.out.println("La suma de los números pares es: " + sumaPares);
+            System.out.println("El total de números pares es: " + conteoPares);
+        }
+
+        // 6. Calculamos y mostramos el promedio de los impares.
+        if (conteoImpares == 0) {
+            System.out.println("No se han digitado números impares.");
+        } else {
+            // El promedio se calcula solo si hay números impares para evitar división por cero.
+            double promedioImpares = (double) sumaImpares / conteoImpares;
+            System.out.printf("El promedio de los números impares es: %.2f\n", promedioImpares);
+        }
+
+        // Cerramos el objeto Scanner para liberar recursos.
+        scanner.close();
+    }
+}

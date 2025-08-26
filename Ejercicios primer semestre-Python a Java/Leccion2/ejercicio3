@@ -1,0 +1,50 @@
+import java.util.Scanner; // Importamos la clase Scanner para leer la entrada del usuario
+
+public class EstacionDelAnio {
+
+    public static void main(String[] args) {
+
+        // Creamos una instancia de la clase Scanner para manejar la entrada
+        Scanner entrada = new Scanner(System.in);
+
+        // Pedimos al usuario que digite un mes del año
+        System.out.print("Digite un mes del año (1 - 12): ");
+        int mes = entrada.nextInt();
+
+        // Inicializamos la variable 'estacion'
+        String estacion = null;
+
+        // Usamos una estructura switch para determinar la estación de forma más concisa
+        switch (mes) {
+            case 1:
+            case 2:
+            case 3:
+                estacion = "Verano";
+                break;
+            case 4:
+            case 5:
+            case 6:
+                estacion = "Otoño";
+                break;
+            case 7:
+            case 8:
+            case 9:
+                estacion = "Invierno";
+                break;
+            case 10:
+            case 11:
+            case 12:
+                estacion = "Primavera";
+                break;
+            default:
+                estacion = "Error, no hay un número para ese mes";
+                break;
+        }
+
+        // Mostramos el resultado
+        System.out.println("Para el mes " + mes + " la estación es: " + estacion);
+
+        // Cerramos el objeto Scanner para liberar los recursos
+        entrada.close();
+    }
+}

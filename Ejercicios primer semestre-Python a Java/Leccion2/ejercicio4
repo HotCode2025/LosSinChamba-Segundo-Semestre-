@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class EtapasDeVida {
+
+    public static void main(String[] args) {
+
+        // Creamos un objeto Scanner para leer la entrada del usuario.
+        Scanner scanner = new Scanner(System.in);
+
+        // Pedimos al usuario que digite su edad.
+        System.out.print("Digite su edad: ");
+        int edad = scanner.nextInt();
+
+        // Inicializamos la variable mensaje.
+        String mensaje = null;
+
+        // Utilizamos una estructura if-else if-else para determinar el mensaje.
+        // En Java, los operadores lógicos 'and' y 'or' se escriben '&&' y '||'.
+        if (edad >= 0 && edad < 10) {
+            mensaje = "La infancia es increible y bella";
+        } else if (edad >= 10 && edad < 20) {
+            mensaje = "Tienes muchos cambios, mucho que estudiar";
+        } else if (edad >= 20 && edad < 30) {
+            mensaje = "Amor y comienza el trabajo";
+        } else if (edad >= 30 && edad < 50) {
+            mensaje = "Es la edad madura, de la experiencia y la estabilidad";
+        } else if (edad >= 50 && edad < 70) {
+            mensaje = "Una etapa de sabiduría y reflexión";
+        } else if (edad >= 70 && edad <= 120) {
+            mensaje = "Tienes la oportunidad de disfrutar de tus logros";
+        } else {
+            // El resto de los casos se manejan aquí.
+            mensaje = "Error, etapa de vida no reconocida. La edad debe estar entre 0 y 120";
+        }
+
+        // Mostramos el resultado.
+        System.out.println("Tu edad es: " + edad + ", " + mensaje);
+
+        // Cerramos el objeto Scanner.
+        scanner.close();
+    }
+}

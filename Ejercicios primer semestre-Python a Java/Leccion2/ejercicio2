@@ -1,0 +1,78 @@
+import java.util.Scanner; // Necesario para leer la entrada del usuario
+import java.lang.Math; // Necesario para usar la función Math.pow()
+
+public class EjerciciosPythonToJava {
+
+    public static void main(String[] args) {
+
+        // Creamos un objeto Scanner para leer la entrada desde el teclado
+        Scanner scanner = new Scanner(System.in);
+
+        // --- Ejercicio 1: Expresión Algorítmica ---
+        System.out.println("--- Ejercicio 1: Expresión Algorítmica ---");
+        System.out.print("Digite el valor de a: ");
+        double a = scanner.nextDouble();
+        System.out.print("Digite el valor de b: ");
+        double b = scanner.nextDouble();
+        System.out.print("Digite el valor de c: ");
+        double c = scanner.nextDouble();
+
+        // Calculamos el resultado. En Java, la potencia se usa con Math.pow().
+        double resultado = (Math.pow(a, 3) * (Math.pow(b, 2) - 2 * a * c)) / (2 * b);
+        System.out.println("El resultado de la expresión es: " + resultado);
+
+        System.out.println("\n");
+
+        // --- Ejercicio 2: Solución Lógica ---
+        System.out.println("--- Ejercicio 2: Solución Lógica ---");
+        System.out.print("Digite el valor de a: ");
+        a = scanner.nextDouble();
+        System.out.print("Digite el valor de b: ");
+        b = scanner.nextDouble();
+
+        // En Java, el operador 'and' es '&&' y 'or' es '||'.
+        boolean resultadoLogico = ((3 + 5 * 8) < 3 && (-6.0 / 3 * 4 + 2 < 2)) || (a > b);
+        System.out.println("\nLa expresión a evaluar es: ((3 + 5 * 8) < 3 and (-6 / 3 * 4 + 2 < 2)) or (a > b)");
+        System.out.println("Con a = " + a + " y b = " + b);
+        System.out.println("El resultado lógico es: " + resultadoLogico);
+
+        System.out.println("\n");
+
+        // --- Ejercicio 3: Intercambiar el valor de dos variables ---
+        System.out.println("--- Ejercicio 3: Intercambiar el valor de dos variables ---");
+        // Asignamos los valores iniciales.
+        a = 10;
+        b = 5;
+
+        System.out.println("--- Valores Iniciales ---");
+        System.out.println("El valor de a es: " + a);
+        System.out.println("El valor de b es: " + b);
+
+        // En Java se necesita una variable temporal para intercambiar valores.
+        double temp = a;
+        a = b;
+        b = temp;
+
+        System.out.println("\n--- Valores Intercambiados ---");
+        System.out.println("El nuevo valor de a es: " + a);
+        System.out.println("El nuevo valor de b es: " + b);
+
+        System.out.println("\n");
+
+        // --- Ejercicio 4: Área y longitud de un círculo ---
+        System.out.println("--- Ejercicio 4: Área y longitud de un círculo ---");
+        System.out.print("Introduce el radio del círculo: ");
+        double radio = scanner.nextDouble();
+
+        // El valor de Pi en Java es Math.PI.
+        double area = Math.PI * (Math.pow(radio, 2));
+        double longitud = 2 * Math.PI * radio;
+
+        System.out.println("\n--- Resultados para el círculo de radio " + radio + " ---");
+        System.out.printf("El área del círculo es: %.2f\n", area);
+        System.out.printf("La longitud de la circunferencia es: %.2f\n", longitud);
+
+        // Cerramos el objeto Scanner para liberar recursos
+        scanner.close();
+    }
+}

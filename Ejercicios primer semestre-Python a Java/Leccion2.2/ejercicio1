@@ -1,0 +1,40 @@
+// Importa la clase Scanner para leer la entrada del usuario
+import java.util.Scanner;
+
+public class ExpresionAlgoritmica {
+
+    public static void main(String[] args) {
+
+        // Crea un objeto Scanner para obtener la entrada del usuario
+        Scanner scanner = new Scanner(System.in);
+
+        // Declara las variables como 'double' para manejar números decimales
+        double a;
+        double b;
+        double c;
+        double resultado;
+
+        // Solicita al usuario que ingrese el valor de 'a'
+        System.out.print("Digite el valor de a: ");
+        a = scanner.nextDouble();
+
+        // Solicita al usuario que ingrese el valor de 'b'
+        System.out.print("Digite el valor de b: ");
+        b = scanner.nextDouble();
+
+        // Solicita al usuario que ingrese el valor de 'c'
+        System.out.print("Digite el valor de c: ");
+        c = scanner.nextDouble();
+
+        // Cierra el objeto Scanner para liberar recursos
+        scanner.close();
+
+        // Calcula el resultado de la expresión.
+        // Math.pow(base, exponente) se usa para la potencia.
+        // La expresión es: (a^3 * (b^2 - 2ac)) / (2b)
+        resultado = (Math.pow(a, 3) * (Math.pow(b, 2) - 2 * a * c)) / (2 * b);
+
+        // Imprime el resultado en la consola
+        System.out.println("El resultado es: " + resultado);
+    }
+}
