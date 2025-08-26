@@ -52,7 +52,7 @@ print(nombres)
 nombres.clear()
 print(nombres)
 
-# Eleminiar la lista
+# Eliminar la lista
 del nombres
 #print(nombres)
 
@@ -60,13 +60,13 @@ del nombres
 # Definimos un Tuplas
 cocina = ('cuchara', 'tenedor', ' cuchillo')
 print(len(cocina))
-# Acceder a un elementro, para utilizamos corchetes no parentesis
+# Acceder a un elemento, para utilizamos corchetes no parentesis
 print(cocina[0])
-#Manera inversa
+# Manera inversa
 print(cocina[-1])
-#Acceder a un rango
+# Acceder a un rango
 print(cocina[0:1])
-#Ejemplos
+# Ejemplos
 Juegos = ('cs2',)  #un tupla necesita de un elemnto y la coma (,) si no seria strem o cadena
 # Recordemos los elemneto de la Tupla
 for cocinar in cocina:  # Print esta usando \n para los saltos de lineas
@@ -75,7 +75,7 @@ cocinaLista = list(cocina)
 cocinaLista[0] = 'Plato'
 cocina = tuple(cocinaLista)
 print('\n', cocina)
-#del cocina # esto es ara eliminar una tupla
+# del cocina # esto es ara eliminar una tupla
 
 # CLASE 2 2.1
 # tipo set
@@ -88,13 +88,13 @@ print('Saturno' in planetas)  # Devuelve False
 
 # Agregar un elemento al set
 planetas.add('Saturno')
-planetas.add('tierra')
+planetas.add('Tierra')
 print(planetas)  # 'tierra' no se agregará porque los sets son únicos
 
 # Eliminar elementos, puede arrojar un error si el elemento no existe
 planetas.remove("Jupiter")  # Esta funcion ante un mal ingreso o inexistencia del elemento da error
 print(planetas)
-planetas.discard("tierra")  # Esta funcion no nos presenta ningun error
+planetas.discard("Tierra")  # Esta funcion no nos presenta ningun error
 print(planetas)
 
 # Limpiar set
