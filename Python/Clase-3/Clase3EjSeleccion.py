@@ -39,25 +39,25 @@ nombres.insert(1, "Albert")
 print(nombres)
 nombres.insert(3, "Agus")
 print(nombres)
-# Eliminar un Elemneto
+# Eliminar un Elemento
 nombres.remove("Albert")
 print(nombres)
-#Eliminar el ultimo Elemento
+# Eliminar el ultimo Elemento
 nombres.pop()
 print(nombres)
-# Eliminar un indice espedifico
+# Eliminar un indice especifico
 del nombres[2]  # del significa delete o eliminar
 print(nombres)
-#Eliminar, borrar o limpiar todoos los elementos
+# Eliminar, borrar o limpiar todoos los elementos
 nombres.clear()
 print(nombres)
 
-#Eleminiar la lista
+# Eleminiar la lista
 del nombres
 #print(nombres)
 
-#Verificamio como trabajar dia dia a Git
-#Definimos un Tuplas
+# Verificamos como trabajar dia a dia Git
+# Definimos un Tuplas
 cocina = ('cuchara', 'tenedor', ' cuchillo')
 print(len(cocina))
 # Acceder a un elementro, para utilizamos corchetes no parentesis
