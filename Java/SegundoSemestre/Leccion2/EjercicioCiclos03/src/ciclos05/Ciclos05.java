@@ -13,16 +13,12 @@ public class Ciclos05 {
 
         int intento;
         int intentosRealizados = 0;
-
         
         do {
             
             String entrada = JOptionPane.showInputDialog("Adivina un número entre 0 y 100:");
             intento = Integer.parseInt(entrada);
-
-          
             intentosRealizados++;
-
         
             if (intento > numeroSecreto) {
                 JOptionPane.showMessageDialog(null, "El número es MENOR.");
