@@ -1,17 +1,13 @@
 package ciclos05;
 
-
 import java.util.Scanner;
 import java.util.Random;
 
 public class Ejercicio5CiclosEscanner {
 
     public static void main(String[] args) {
-
         try (Scanner entrada = new Scanner(System.in)) {
-
             Random aleatorio = new Random();
-
             int numeroAleatorio = aleatorio.nextInt(101);
             int numeroUsuario;
             int intentos = 0;
@@ -32,7 +28,6 @@ public class Ejercicio5CiclosEscanner {
                 }
             } while (!adivinado);
             System.out.println("El número de intentos fue: " + intentos);
-
         }
     }
 }
