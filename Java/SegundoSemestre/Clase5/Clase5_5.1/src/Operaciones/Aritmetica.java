@@ -10,8 +10,8 @@ public class Aritmetica {
         return a + b;
     }
     public int sumarConArgumentos(int arg1, int arg2) {
-        int a = arg1;
-        int b = arg2;
-        return a + b;
+        a = arg1;
+        b = arg2;
+        return sumarConRetorno();
     }
 }
