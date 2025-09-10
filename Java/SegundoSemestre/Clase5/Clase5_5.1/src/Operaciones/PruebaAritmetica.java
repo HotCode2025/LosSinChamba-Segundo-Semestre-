@@ -8,7 +8,11 @@ public class PruebaAritmetica {
         aritmetica.sumarNumeros();
         
         int resultado = aritmetica.sumarConRetorno();
-        System.out.println("Resultado= " + resultado);
+        System.out.println("Resultado = " + resultado);
         
+        
+        // Clase 5.3
+        resultado = aritmetica.sumarConArgumentos(8, 9);
+        System.out.println("Resultado usando argumentos = " + resultado);
     }
 }
