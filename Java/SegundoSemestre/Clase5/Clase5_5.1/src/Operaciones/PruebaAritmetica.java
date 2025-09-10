@@ -1,13 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Operaciones;
 
-/**
- *
- * @author gabriel
- */
 public class PruebaAritmetica {
-    
+    public static void main(String[] args) {
+        Aritmetica aritmetica = new Aritmetica();
+        aritmetica.a = 4;
+        aritmetica.b = 2; 
+        aritmetica.sumarNumeros();
+    }
 }
