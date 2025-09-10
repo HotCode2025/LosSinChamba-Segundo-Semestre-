@@ -6,4 +6,7 @@ public class Aritmetica {
         int resultado = a + b;
         System.out.println("Resultado= " + resultado);
     }
+    public int sumarConRetorno() {
+        return a + b;
+    }
 }
