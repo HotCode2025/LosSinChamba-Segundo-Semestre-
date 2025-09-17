@@ -29,4 +29,5 @@ for i in range(1, num + 1):
 
 # 4. Imprimir el resultado final.
 print("-" * 30)
+
 print(f"El factorial de {num} (es decir, {num}!) es: {factorial}")
