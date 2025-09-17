@@ -22,3 +22,4 @@ print(f"Lista de palabras que aparecen en la primera lista, pero no en la segund
 print(f"Lista de palabras que aparecen en la segunda lista, pero no en la primera: {solo2}")
 print(f"Lista de palabras que aparecen en ambas listas: {interseccion}")
 
+
