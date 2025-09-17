@@ -47,4 +47,5 @@ try:
         print(f"El factorial de {numero_ingresado} es: {resultado}")    # Mostramos el resultado.
 except ValueError:
     print("Error: Debes ingresar un número entero válido.")  # Este bloque se ejecuta si el usuario
+
                                                              # ingresa algo que no es un número.
