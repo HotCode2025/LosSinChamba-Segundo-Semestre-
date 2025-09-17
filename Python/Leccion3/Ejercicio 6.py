@@ -59,4 +59,5 @@ else:
     # Este cálculo solo se hace si hay al menos un número impar.
     promedio_impares = suma_impares / conteo_impares
     # Se formatea el resultado a 2 decimales.
+
     print(f" El promedio de los números impares es: {promedio_impares:.2f}")
