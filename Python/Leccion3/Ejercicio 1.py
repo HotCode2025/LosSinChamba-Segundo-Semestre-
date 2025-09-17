@@ -30,4 +30,5 @@ while True:
         break
 
 # Mensaje de despedida al finalizar el proceso.
+
 print("\nPrograma finalizado. ¡Hasta luego!")
