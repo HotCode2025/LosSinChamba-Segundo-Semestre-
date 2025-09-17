@@ -43,4 +43,5 @@ try:
 
 except ValueError:
     # Si el usuario no ingresa un número, se muestra un error.
+
     print("Error: La entrada no es un número válido.")
