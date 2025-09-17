@@ -41,4 +41,5 @@ print("-" * 30)
 print("\n--- Resultados del Conteo ---")
 print(f" Cantidad de números positivos: {conteo_positivos}")
 print(f" Cantidad de números negativos: {conteo_negativos}")
+
 print(f"Cantidad de números neutros (cero): {conteo_neutros}")
