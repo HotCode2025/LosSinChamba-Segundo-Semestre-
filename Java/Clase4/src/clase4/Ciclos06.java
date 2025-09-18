@@ -11,7 +11,7 @@ public class Ciclos06 {
 
         do {
             System.out.println("Por favor, ingrese un número (ingrese 0 para salir):");
-            numero = entrada.nextInt();
+            numero = Integer.parseInt(entrada.nextLine());
             suma += numero; 
         } while (numero != 0);
 
