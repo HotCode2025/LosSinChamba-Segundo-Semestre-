@@ -68,7 +68,7 @@ console.log('Distintas formas de imprimir un objeto forma 4');
 let personaString = JSON.stringify(persona);
 console.log(personaString);
 
-
+//Arrancamos con la segunda parte CLASE 5
 //
 //CLASE 5 OBJETOS PARTE 2
 //
@@ -159,3 +159,4 @@ console.log(persona4.nombreCompleto2.call(persona5, 'Ing.', '5492604123456'));
 //Metodo Apply
 let arreglo = ['Ing.', '5492604566666'];
 console.log(persona4.nombreCompleto2.apply(persona5, arreglo));
+
