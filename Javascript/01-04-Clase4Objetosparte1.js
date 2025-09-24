@@ -3,7 +3,7 @@ console.log(x.length);
 console.log('Tipos primitivos');
 // Objeto
 let persona = {
-    nombre: 'kevin',
+    nombre: 'kevin', //Asignamos nombre
     apellido : 'castilla', //Asignamos el Apellido
     email: 'kevinrasgido73@gmail.com', //Asignamos el Correo
     edad: 29, //Asignamos la edad
@@ -67,6 +67,7 @@ console.log(personaArray);
 console.log('Distintas formas de imprimir un objeto forma 4');
 let personaString = JSON.stringify(persona);
 console.log(personaString);
+
 
 
 
