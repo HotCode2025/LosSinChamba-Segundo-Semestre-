@@ -7,7 +7,7 @@ let persona = {
     apellido : 'castilla',
     email: 'kevinrasgido73@gmail.com',
     edad: 29,
-    idioma: 'ES',
+    idioma: 'ES', //ponemos el idioma en español
     get lang(){
         return this.idioma.toUpperCase(); //convierte las minisculas a mayusculas
     },
@@ -67,4 +67,5 @@ console.log(personaArray);
 console.log('Distintas formas de imprimir un objeto forma 4');
 let personaString = JSON.stringify(persona);
 console.log(personaString);
+
 
