@@ -131,7 +131,7 @@ let miFuncion1 = new function(){}; //Todo despues de new es considerado objeto
 //caso function 2
 let miFuncion2 = function(){}; //Notacion simplificada y recomendada
 //opciones 2 son simplificadas
-
+//Todas las segundas opciones son las mejores para aplicar, son mas sencillas
 //Uso de prototype
 Persona3.prototype.telefono = '2604040506';
 console.log(padre);
@@ -159,4 +159,5 @@ console.log(persona4.nombreCompleto2.call(persona5, 'Ing.', '5492604123456'));
 //Metodo Apply
 let arreglo = ['Ing.', '5492604566666'];
 console.log(persona4.nombreCompleto2.apply(persona5, arreglo));
+
 
