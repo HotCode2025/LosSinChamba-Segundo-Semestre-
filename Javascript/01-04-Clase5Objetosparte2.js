@@ -160,4 +160,6 @@ console.log(persona4.nombreCompleto2.call(persona5, 'Ing.', '5492604123456'));
 let arreglo = ['Ing.', '5492604566666'];
 console.log(persona4.nombreCompleto2.apply(persona5, arreglo));
 
+//TERMINAMOS LA CLASE TSLECCION04 ENTREGADA
+
 
