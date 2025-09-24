@@ -5,7 +5,7 @@ console.log('Tipos primitivos');
 let persona = {
     nombre: 'kevin',
     apellido : 'castilla',
-    email: 'kevinrasgido73@gmail.com',
+    email: 'kevinrasgido73@gmail.com', //Asignamos el Correo
     edad: 29, //Asignamos la edad
     idioma: 'ES', //ponemos el idioma en español
     get lang(){
@@ -67,6 +67,7 @@ console.log(personaArray);
 console.log('Distintas formas de imprimir un objeto forma 4');
 let personaString = JSON.stringify(persona);
 console.log(personaString);
+
 
 
 
