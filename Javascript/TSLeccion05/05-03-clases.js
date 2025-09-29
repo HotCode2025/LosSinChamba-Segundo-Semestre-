@@ -1,4 +1,5 @@
-//let persona3 = new Persona('Carla', 'Ponce'); esto no se dee hacer: Persona is not defined
+//let persona3 = new Persona('Ana', 'García');
+
 
 class Persona{ //Clase padre
     constructor(nombre, apellido){
@@ -38,17 +39,19 @@ class Empleado extends Persona{ //Clase hija
     }
 }
 
-let persona1 = new Persona('Martin', 'Perez');
-console.log(persona1.nombre);
-persona1.nombre = 'Juan Carlos';
-console.log(persona1.nombre);
-//console.log(persona1);   
-let persona2 = new Persona('Carlos', 'Lara');
-console.log(persona2.nombre);
-persona2.nombre = 'Maria Laura';
-console.log(persona2.nombre);
-//console.log(persona2); 
 
-let Empleado = new Empleado('Maria', 'Gimenez', 'Sistemas');
+let persona1 = new Persona('Leo', 'Messi');
+console.log(persona1.nombre); //Leo
+persona1.nombre = 'Juan Carlos';
+console.log(persona1.nombre);   // Juan Carlos
+//console.log(persona1);
+
+let persona2 = new Persona('Cristiano', 'Ronaldo');
+console.log(persona2.nombre); //Cristiano
+persona2.nombre = 'María Laura';
+console.log(persona2.nombre);   // María Laura
+//console.log(persona2);
+
+let Empleado = new Empleado('Lola', 'Ruiz', 'Sistemas');
 console.log(empleado1);
 console.log(empleado1.nombre);
