@@ -1,6 +1,7 @@
 //let persona3 = new Persona('Ana', 'García');
 
 
+
 class Persona{ //Clase 1
     constructor(nombre, apellido){
         this._nombre = nombre;
@@ -55,4 +56,5 @@ console.log(persona2.nombre);   // María Laura
 let Empleado = new Empleado('Lola', 'Ruiz', 'Sistemas');
 console.log(empleado1);
 console.log(empleado1.nombre);
+
 
