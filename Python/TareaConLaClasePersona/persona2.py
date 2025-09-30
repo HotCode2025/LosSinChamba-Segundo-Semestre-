@@ -46,4 +46,5 @@ print(persona1.peso)
 persona1.alcance = '1.92'
 print(persona1.alcance)
 
+
 print(persona1.mostrar_detalles())
