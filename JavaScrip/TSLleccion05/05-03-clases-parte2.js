@@ -39,7 +39,6 @@ class Empleado extends Persona{ //Clase hija
     }
 }
 
-
 let persona1 = new Persona('Leo', 'Messi');
 console.log(persona1.nombre); //Leo
 persona1.nombre = 'Juan Carlos';
