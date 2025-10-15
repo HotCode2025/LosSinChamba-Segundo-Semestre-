@@ -44,4 +44,5 @@ imprimir_numeros_recursivos(5)
 print("\nImprimiendo desde 3:")
 imprimir_numeros_recursivos(3)
 print("\nProbando con un número negativo:")
+
 imprimir_numeros_recursivos(-2)
