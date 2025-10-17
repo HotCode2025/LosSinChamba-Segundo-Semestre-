@@ -11,6 +11,11 @@ public class Persona {
     public Persona() {
     }
 
+    @Override
+    public String toString() {
+        return "Persona{" + "nombre=" + nombre + ", genero=" + genero + ", edad=" + edad + ", direccion=" + direccion + '}';
+    }
+
     // Constructor con todos los atributos
     public Persona(String nombre, char genero, int edad, String direccion) {
         this.nombre = nombre;
