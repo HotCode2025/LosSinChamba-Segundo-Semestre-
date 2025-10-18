@@ -2,10 +2,10 @@ package domain;
 
 public class Persona {
     // Atributos privados
-    private String nombre; // -nombre: String
-    private char genero;   // -genero: char
-    private int edad;      // -edad: int
-    private String direccion; // -direccion: String
+    protected String nombre; // -nombre: String
+    protected char genero;   // -genero: char
+    protected int edad;      // -edad: int
+    protected String direccion; // -direccion: String
 
     // Constructor por defecto
     public Persona() {
