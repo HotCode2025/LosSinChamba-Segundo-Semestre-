@@ -11,11 +11,6 @@ public class Persona {
     public Persona() {
     }
 
-    @Override
-    public String toString() {
-        return "Persona{" + "nombre=" + nombre + ", genero=" + genero + ", edad=" + edad + ", direccion=" + direccion + '}';
-    }
-
     // Constructor con todos los atributos
     public Persona(String nombre, char genero, int edad, String direccion) {
         this.nombre = nombre;
@@ -69,4 +64,20 @@ public class Persona {
     public void setDireccion(String direccion) {
         this.direccion = direccion;
     }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Persona{");
+        sb.append("nombre=").append(nombre);
+        sb.append(", genero=").append(genero);
+        sb.append(", edad=").append(edad);
+        sb.append(", direccion=").append(direccion);
+        sb.append(", ").append(super.toString());
+        sb.append('}');
+        return sb.toString();
+    }
+    
+    
+    
 }
