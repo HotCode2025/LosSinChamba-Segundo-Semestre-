@@ -7,14 +7,15 @@ public class Empleado extends Persona {
 
     // Constructor
     public Empleado(String nombre, double sueldo) {
-        //super(nombre);
+        super(nombre);
         this.idEmpleado = ++Empleado.contadorEmpleados;
         this.sueldo = sueldo;
     }
 
+    /*
     public Empleado() {
     }
-
+    */
     public int getIdEmpleado() {
         return this.idEmpleado;
     }
@@ -33,6 +34,7 @@ public class Empleado extends Persona {
         sb.append("Empleado{");
         sb.append("idEmpleado=").append(idEmpleado);
         sb.append(", sueldo=").append(sueldo);
+        sb.append(", ").append(super.toString());
         sb.append('}');
         return sb.toString();
     }

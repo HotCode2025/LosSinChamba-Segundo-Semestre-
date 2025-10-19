@@ -24,6 +24,10 @@ public class Persona {
         this.direccion = direccion;
     }
 
+    // Constructor con todos los atributos
+    public Persona(String nombre) {
+        this.nombre = nombre;
+    }
     // Métodos Getters y Setters (según el diagrama)
 
     // +getNombre(): Str
