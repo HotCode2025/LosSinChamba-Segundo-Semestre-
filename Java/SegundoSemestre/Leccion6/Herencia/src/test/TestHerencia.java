@@ -8,10 +8,7 @@ public class TestHerencia {
     public static void main(String[] args) {
         Empleado empleado1 = new Empleado("Ariel", 65000.00);
         System.out.println("empleado1 = " + empleado1);
-        
-        
         Cliente cl1 = new Cliente(new Date(), true, "Gabriel", 'M', 40, "Independencia 41");
         System.out.println("Cliente: " + cl1);
-        
     }
 }
