@@ -1,0 +1,1 @@
+MI_CONSTANTE = 'Esta es la variable constante'
