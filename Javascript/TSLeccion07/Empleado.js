@@ -23,4 +23,5 @@ class Empleado extends Persona {
         ID Empleado: ${this._idEmpleado}, 
         Sueldo: ${this._sueldo}`;
     }
+
 }
