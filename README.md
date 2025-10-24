@@ -382,6 +382,15 @@ El encargado de organizar el proyecto baja, revisa y unifica todos los cambios
 
 
 
+CLASE 11 MIÉRCOLES 22 DE OCTUBRE DEL 2025 - Portafolio 11
+
+Flujo de trabajo profesional -> Archivos binarios
+
+Las imagenes cargandolas en el repositorio, representan un problema: porque las imagenes son pesadas, y si la subimos al repositorio, siempre que hagamos cambios, vamos a estar trayendo la imagen siempre, estas imagenes son binarios para GitHub, mientras mas binarios carguemos, más pesado va a ser el repositorio, algo que no es parte de las buenas practicas.
+
+
+Otra cosa muy importante a tener en cuenta, es que en cada commit que hagamos hay un tamaño predefinido para la carga, este no lo podemos superar o no podremos subir los commits, el tamaño es 100 mb, si acoplamos un archivo binario en un commit que pese mas de esto, será un problema, no nos dejará seguir commiteando, porque siempre seguirá arrastrando el archivo binario.
+
 
 
 
