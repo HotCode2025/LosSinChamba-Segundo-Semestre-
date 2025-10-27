@@ -82,7 +82,7 @@ cd Documents
 vemos de nuevo dónde estamos
 ll
 y creamos aquí un nuevo directorio llamado Proyectos
-mkdir Proyectos
+mkdir Proyectos 
 entramos en el directorio
 y vamos a traer el repositorio con el comando
 git clone (y el enlace ssh)
@@ -390,6 +390,7 @@ Las imagenes cargandolas en el repositorio, representan un problema: porque las 
 
 
 Otra cosa muy importante a tener en cuenta, es que en cada commit que hagamos hay un tamaño predefinido para la carga, este no lo podemos superar o no podremos subir los commits, el tamaño es 100 mb, si acoplamos un archivo binario en un commit que pese mas de esto, será un problema, no nos dejará seguir commiteando, porque siempre seguirá arrastrando el archivo binario.
+
 
 
 
