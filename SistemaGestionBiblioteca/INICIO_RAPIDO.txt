@@ -1,0 +1,72 @@
+# 🚀 INICIO RÁPIDO - NetBeans
+
+## Sistema de Gestión de Biblioteca
+
+---
+
+## ⚡ Abrir en NetBeans (2 pasos)
+
+### 1. Abre NetBeans
+### 2. File → Open Project → Selecciona esta carpeta
+
+¡Listo! 🎉
+
+---
+
+## ▶️ Ejecutar
+
+**Opción 1**: Presiona **F6**  
+**Opción 2**: Click en el botón verde ▶️  
+**Opción 3**: Click derecho en proyecto → **Run**
+
+---
+
+## 📦 Estructura con Packages
+
+```
+com.biblioteca.main        → BibliotecaApp.java (Clase principal)
+com.biblioteca.modelo      → Libro.java, Usuario.java
+com.biblioteca.controlador → Biblioteca.java
+```
+
+---
+
+## 🎮 Primeros Pasos en el Programa
+
+1. **Ver libros** → Opción 2
+2. **Prestar libro** → Opción 4
+   - ISBN: `978-0307474728`
+   - Usuario: `USR1000`
+3. **Estadísticas** → Opción 8
+
+---
+
+## ✅ Todo Incluido
+
+- ✅ Packages organizados
+- ✅ Configuración NetBeans completa
+- ✅ JAR ejecutable generado
+- ✅ Datos de ejemplo precargados
+- ✅ Listo para compilar y ejecutar
+
+---
+
+## 📚 Archivos Importantes
+
+- `src/com/biblioteca/` - Código fuente con packages
+- `nbproject/` - Configuración NetBeans
+- `build/` - Archivos compilados
+- `dist/` - JAR ejecutable
+
+---
+
+## 🐛 ¿Problemas?
+
+Lee el archivo **README.md** completo para:
+- Solución de problemas
+- Configuración detallada
+- Instrucciones de compilación
+
+---
+
+¡Disfruta tu proyecto NetBeans! 🎓

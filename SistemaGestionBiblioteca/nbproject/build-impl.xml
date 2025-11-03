@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+*** GENERADO POR NETBEANS ***
+-->
+<project name="SistemaGestionBiblioteca-impl" default="default" basedir=".." xmlns:j2seproject1="http://www.netbeans.org/ns/j2se-project/1" xmlns:j2seproject3="http://www.netbeans.org/ns/j2se-project/3" xmlns:jaxrpc="http://www.netbeans.org/ns/j2se-project/jax-rpc">
+    <target name="default" depends="jar"/>
+    <target name="compile">
+        <mkdir dir="build/classes"/>
+        <javac srcdir="src" destdir="build/classes" includeantruntime="false"/>
+    </target>
+    <target name="jar" depends="compile">
+        <mkdir dir="dist"/>
+        <jar jarfile="dist/SistemaGestionBiblioteca.jar" basedir="build/classes">
+            <manifest>
+                <attribute name="Main-Class" value="com.biblioteca.main.BibliotecaApp"/>
+            </manifest>
+        </jar>
+    </target>
+    <target name="run" depends="jar">
+        <java jar="dist/SistemaGestionBiblioteca.jar" fork="true"/>
+    </target>
+    <target name="clean">
+        <delete dir="build"/>
+        <delete dir="dist"/>
+    </target>
+</project>
